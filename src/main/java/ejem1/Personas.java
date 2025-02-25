@@ -43,6 +43,7 @@ public class Personas {
      * - controlar mejor los errores en las respuestas
      * 
      */
+
     public static ArrayList<Persona> personas = new ArrayList<>();
 
     @POST
@@ -62,7 +63,7 @@ public class Personas {
     @Path("/listar")
     public Response listar() {
         personas.add(new Persona(1, "Nicole", true, "femenino"));
-    //Para el xml
+        // Para el xml
         return Response.ok(new GenericEntity<List<Persona>>(personas) {
         }).build();
     }

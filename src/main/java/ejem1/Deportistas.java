@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
@@ -504,8 +505,7 @@ public class Deportistas {
     @Produces("imagen/jpg")
     @Path("/img/{id}")
     public Response imagenesDeportistas(@PathParam("id") int id) {
-
-        
         return Response.ok().build();
     }
+
 }
